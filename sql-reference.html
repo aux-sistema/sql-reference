@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Master | Curso Completo de SQL</title>
+    <link rel="stylesheet" href="assets/sql-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+</head>
+<body>
+    <div class="sql-container">
+        <header class="sql-header">
+            <div class="logo">
+                <i class="fas fa-database"></i>
+                <h1>SQL Master <span>Curso Completo</span></h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="sqlSearch" placeholder="Buscar comandos...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <div class="sql-level-selector">
+            <button class="level-btn active" data-level="all">Todos</button>
+            <button class="level-btn" data-level="basic">Básico</button>
+            <button class="level-btn" data-level="intermediate">Intermedio</button>
+            <button class="level-btn" data-level="advanced">Avanzado</button>
+            <button class="level-btn" data-level="administration">Administración</button>
+        </div>
+
+        <main class="sql-main">
+            <div class="sql-category">
+                <h2><i class="fas fa-table"></i> Fundamentos SQL</h2>
+                <div class="sql-commands" data-level="basic">
+                    <!-- Comandos básicos -->
+                </div>
+            </div>
+
+            <div class="sql-category">
+                <h2><i class="fas fa-edit"></i> Manipulación de Datos</h2>
+                <div class="sql-commands" data-level="basic">
+                    <!-- DML -->
+                </div>
+            </div>
+
+            <div class="sql-category">
+                <h2><i class="fas fa-sitemap"></i> Estructura de Bases</h2>
+                <div class="sql-commands" data-level="basic">
+                    <!-- DDL -->
+                </div>
+            </div>
+
+            <div class="sql-category">
+                <h2><i class="fas fa-filter"></i> Consultas Avanzadas</h2>
+                <div class="sql-commands" data-level="intermediate">
+                    <!-- Consultas avanzadas -->
+                </div>
+            </div>
+
+            <div class="sql-category">
+                <h2><i class="fas fa-cogs"></i> Funciones y Procedimientos</h2>
+                <div class="sql-commands" data-level="advanced">
+                    <!-- Funciones -->
+                </div>
+            </div>
+
+            <div class="sql-category">
+                <h2><i class="fas fa-shield-alt"></i> Seguridad y Permisos</h2>
+                <div class="sql-commands" data-level="administration">
+                    <!-- Seguridad -->
+                </div>
+            </div>
+
+            <div class="sql-category">
+                <h2><i class="fas fa-tools"></i> Mantenimiento y Optimización</h2>
+                <div class="sql-commands" data-level="administration">
+                    <!-- Mantenimiento -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="sqlNotification" class="sql-notification">
+        <i class="fas fa-check-circle"></i> Comando copiado!
+    </div>
+
+    <script src="assets/sql-script.js"></script>
+</body>
+</html>
