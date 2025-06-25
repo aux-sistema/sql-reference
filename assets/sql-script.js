@@ -101,6 +101,19 @@ SET FOREIGN_KEY_CHECKS = 1;`,
                     title: "Caso práctico",
                     description: "Este ejemplo muestra cómo eliminar registros en tablas con relaciones, desactivando temporalmente las restricciones de clave foránea."
                 }
+            },
+            {
+                title: "Añadir un nuevo campo ENUM",
+                code: `
+ALTER TABLE nombre_de_tu_tabla
+MODIFY COLUMN urgencia ENUM('baja', 'media', 'alta', 'critica', 'muy_critica') NOT NULL;
+`,
+                description: "Para agregar un nuevo valor a una columna de tipo ENUM.",
+                level: "intermediate",
+                example: {
+                    title: "Caso práctico",
+                    description: "Supongamos que deseas agregar un valor adicional, por ejemplo, 'suspendido' a la columna estado."
+                }
             }
         ],
 
